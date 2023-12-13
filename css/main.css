@@ -41,13 +41,6 @@ header{
         height: 3%;
     }
 
-    #instagram{
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        flex-direction: row;
-    }
-
     .webTitleBox{
         display: flex;
         align-items: center;
