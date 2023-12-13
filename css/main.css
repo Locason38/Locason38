@@ -2,14 +2,16 @@ header{
     background-color: black;
     background-size: 100%;
     width: 100%;
-    height: 130px;
-    display: flex;
+    height: 50%;
+    /*display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
     top: 0%;
-    z-index: 500;
+    z-index: 500;*/
 }
 
 .headertitle{
@@ -18,9 +20,68 @@ header{
     justify-content: center;
 }
 
+
+
+@media screen and (min-width: 50em) {
+    #searchbar{
+        height: 25%;
+        width: 40%;
+        margin-left: 15%;
+        margin-right: 15%;
+        transition: transform .4s;
+    }
+    #searchbar:focus{
+        -ms-transform: scale(1.3); /* IE 9 */
+        -webkit-transform: scale(1.3); /* Safari 3-8 */
+        transform: scale(1.3);
+    }
+
+    #imageInsta{
+        width: 3%;
+        height: 3%;
+    }
+
+    #instagram{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+    }
+
+    .webTitleBox{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 110px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    #searchbar{
+        height: 25%;
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #imageInsta{
+        width: 8%;
+        height: 8%;
+    }
+
+    .webTitleBox{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 70px;
+        width: 100%;
+    }
+}
 .headerImage{
-    height: 70px;
-    margin: 15px;
+    height: 50%;
+    width: 50%;
+    margin: 5%;
     margin-top: auto;
     margin-bottom: auto;
     transition: transform .1s;
@@ -39,16 +100,10 @@ header{
     text-decoration: underline;
 }
 
-.webTitleBox{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    height: 100%;
-    width: 70%;
-}
+
 
 footer{
-    margin-top: 20px;
+    margin-top: 0%;
     clear: both;
     display: block;
     background-color: black;
@@ -60,7 +115,7 @@ footer a {
     text-decoration: none;
 }
 header a{
-    margin: 0px;
+    margin: 0%;
 }
 
 .SectionTitle{
@@ -69,15 +124,3 @@ header a{
     text-align: center;
 }
 
-#searchbar{
-    height: 25%;
-    width: 40%;
-    margin-left: 20%;
-    transition: transform .4s;
-}
-
-#searchbar:focus{
-    -ms-transform: scale(1.3); /* IE 9 */
-    -webkit-transform: scale(1.3); /* Safari 3-8 */
-    transform: scale(1.3);
-}

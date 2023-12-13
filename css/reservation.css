@@ -4,13 +4,16 @@
 }
 body{
     background-color: black;
-    margin-top: 130px;
+    margin-top: 0%;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    size-adjust: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
-#prix{
-    background-color: rgb(204, 204, 204);
-    margin: 0px;
-    font-size: 20px;
-}
+
 
 #resetButton{
     font-size: 20px;
@@ -30,122 +33,289 @@ body{
     justify-content: start;
 }
 
-.totalform{
-    background-color: rgb(204, 204, 204);
-    height: 400px;
-    width: 100%;
-    display: flex;
-    align-items: end;
-}
 
-.imgetform{
-    background-color: rgb(204, 204, 204);
-    color:black;
-    height: 80%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 25px;
-}
-
-.imgetform img{
-    transition: transform .4s;
-    height: 110%;
-    object-fit: scale-down;
-    width: 30%;
-}
-.imgetform img:hover{
-    -ms-transform: scale(1.3); /* IE 9 */
-    -webkit-transform: scale(1.3); /* Safari 3-8 */
-    transform: scale(1.3);
-}
-#dest {
-    color: white;
-    background-color: rgb(83, 71, 71);
-    text-align: center;
-    font-size: xx-large;
-    margin: 0px;
-}
 
 #desc{
     background-color:rgb(204, 204, 204);
-    height: 200px;
+    height: 10%;
     width: 100%;
     display: flex;
     align-items: end;
     justify-content: start;
 }
 
-#desc h2{
-    background-color:rgb(83, 71, 71);
-    margin-top: 0%;
-    width: 100%;
-    text-align: center;
-    color: white;
 
+
+@media screen and (min-width: 50em) {
+    .description{
+        background-color:rgb(204, 204, 204);
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        height: 500px;
+        width: 100%;
+    }
+
+    #Reserver{
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bolder;
+        animation-duration: 1s;
+        animation-name: clignoter;
+        animation-iteration-count: infinite;
+        transition: none;
+    }
+
+     @keyframes clignoter {
+       0%   { color: black; }
+       40%   {color: rgb(156, 56, 56); }
+       100% { color: rgb(250, 4, 4); }
+     }
+
+    .description h2{
+        display: none;
+    }
+
+
+    #description_produit{
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    #dest {
+        color: white;
+        background-color: rgb(83, 71, 71);
+        text-align: center;
+        font-size: xx-large;
+        margin: 0px;
+    }
+
+    #desc h2{
+        background-color:rgb(83, 71, 71);
+        margin-top: 0%;
+        margin-bottom: 0%;
+        width: 100%;
+        text-align: center;
+        color: white;
+    
+    }
+
+    .img_block{
+        min-height: 90px;
+        min-width: 90px;
+        max-width: 90px;
+        max-height: 90px;
+        object-fit: contain;
+        margin-top: 5%;
+    }
+
+    .blockdesc{
+        margin-top: 1%;
+        height: 270px;
+        width: 800px;
+        margin-right: 2%;
+        display: flex;
+    }
+
+    .blockdesc div{
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(167, 167, 167);
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .imgetform{
+        background-color: rgb(204, 204, 204);
+        color:black;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 25px;
+    }
+
+    .imgetform img{
+        transition: transform .4s;
+        height: 90%;
+        object-fit: scale-down;
+        width: 30%;
+    }
+    .imgetform img:hover{
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1);
+    }
+
+    #prix{
+        background-color: rgb(204, 204, 204);
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    #explication{
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 40%;
+        text-align: center;
+        background-color:rgb(167, 167, 167);
+        border: 1px solid black;
+        margin-top: 1%;
+    }
+
+    .blockdesc div h6{
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 0.7rem;
+    
+    }
+    .blockdesc div p{
+        font-size: 0.7rem;
+        margin: 5%;
+        text-align: center;
+    }
 }
 
-.description{
-    background-color:rgb(204, 204, 204);
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    height: 500px;
-    width: 100%;
-}
+@media screen and (max-width: 50em) {
+    .description{
+        background-color:rgb(204, 204, 204);
+        height: 100%;
+        width: 100%;
+        margin-top: 0%;
+    }
 
-.explication{
-    margin-left: 5%;
-    width: 40%;
-    text-align: center;
-    background-color:rgb(167, 167, 167);
-    border: 1px solid black;
-    margin-top: 1%;
-}
+    #dest {
+        color: white;
+        background-color: rgb(83, 71, 71);
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0px;
+    }
 
-.explication p{
-    margin: 2%;
-}
+    #desc h2{
+        background-color:rgb(83, 71, 71);
+        margin-top: 0%;
+        margin-bottom: 0%;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+    }
 
-.description .blockdesc{
-    margin-top: 1%;
-    height: 270px;
-    width: 800px;
-    margin-right: 2%;
-    display: flex;
-}
+    #Reserver{
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bolder;
+        margin-bottom: 5%;
+        animation-duration: .8s;
+        animation-name: clignoter;
+        animation-iteration-count: infinite;
+        transition: none;
+    }
 
-.description .blockdesc div{
-    height: 100%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    background-color:rgb(167, 167, 167);
-    align-items: center;
-    justify-content: space-evenly;
-}
-.img_block{
-    min-height: 90px;
-    min-width: 90px;
-    max-width: 90px;
-    max-height: 90px;
-    object-fit: contain;
+     @keyframes clignoter {
+       0%   { color: black; }
+       40%   {color: rgb(156, 56, 56); }
+       100% { color: rgb(250, 4, 4); }
+     }
+
+    .description h2{
+        background-color: rgb(83, 71, 71);
+        margin-top: 0%;
+        margin-bottom: 0%;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+    }
+    
+    #description_produit{
+        margin: 0%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .img_block{
+    max-height: 90%;
+    max-width: 90%;
+    margin: auto;
     margin-top: 5%;
+    }
+
+    .blockdesc{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .blockdesc div{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 35% 20% 45%;
+        background-color:rgb(167, 167, 167);
+    }
+
+    .imgetform{
+        background-color: rgb(204, 204, 204);
+        color:black;
+        height: 400px;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 80% 10% 10%;
+        font-size: 25px;
+    } 
+
+    .imgetform img{
+        transition: transform .4s;
+        height: 80%;
+        object-fit: scale-down;
+        width: 80%;
+        margin: auto;
+    }
+    .imgetform img:hover{
+        -ms-transform: scale(1.3); /* IE 9 */
+        -webkit-transform: scale(1.3); /* Safari 3-8 */
+        transform: scale(1.3);
+    }
+
+    .imgetform h3{
+        margin: 0%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    
+    .blockdesc div h6{
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 0.7rem;
+    
+    }
+    .blockdesc div p{
+        font-size: 0.7rem;
+        margin: 5%;
+        text-align: center;
+    }
+
+    #explication{
+        text-align: center;
+        margin-top: 0%;
+        width: 100%;
+        height: 100%;
+        background-color:rgb(167, 167, 167);
+    }
 }
 
-.description .blockdesc div h6{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 15px;
 
-}
-.description .blockdesc div p{
-    display: flex;
-    text-align-last: center;
-    font-size: 12px;
-    height: 90%;
-    width: 80%;
 
-}
+
+

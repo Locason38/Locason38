@@ -1,53 +1,43 @@
 .indexbody{
     background-color: black;
-    margin-top: 130px;
+    margin-top: 0%;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    size-adjust: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
-.filtre{
+.form_filtre{
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    min-height: 10%;
     min-width: 100%;
-    margin-left: 1%;
+    margin: 0%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: start;
-    flex-direction: row;
-    
-}
-aside form{
-    height: 100%;
-    min-width: 500px;
-    width: 30%;
-    margin-left:  1%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
 }
-aside form p{
-    margin-left:1%;
-    margin-right: 3%;
-    display: flex;
-    flex-direction: row;
-}
+
+
 main{
     float:inline-start;
+    margin-top: 5%;
 }
 
 
 .indexGrid{
     display: grid;
     background-color:rgb(204, 204, 204);
+    height: 100%;
+    width: 100%;
 
 }
-.destinationGrid{
-    background-color: rgb(204, 204, 204);
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25%;
-    margin-left: 3%;
-    margin-right: 3%;
-    
-    
-}
+
 
 aside{
     background-color: rgba(83, 71, 71, 0.308);
@@ -60,8 +50,8 @@ aside{
     justify-content: center;
 }
 .imageDestination{
-    height: 90%;
-    width: 90%;
+    max-height: 90%;
+    max-width: 90%;
     object-fit: scale-down;
     display: flex;
     align-items: center;
@@ -81,8 +71,7 @@ aside{
     align-items: center;
     justify-content: center;
     background-color: white;
-    -webkit-transition: color;
-    transition: color;
+    
     border-radius: 5%;
     
 }
@@ -91,36 +80,112 @@ aside{
     height: 90%;
     width: 90%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: black;
+    text-decoration: none;
+    -webkit-transition: color;
+    transition: color;
 }
-.voyages p{
-    font-size: x-large;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bolder;
-    max-height: 20%;
-}
-.voyages h2{
-    text-decoration: underline;
-    font-size: x-large;
-    display: flex;
-    object-fit: scale-down;
-    align-items: center;
-    justify-content: center;
+@media screen and (min-width: 50em) {
+    .voyages a p{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
+        max-height: 20%;
+    }
 
+    .form_filtre p{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        font-size: 1em;
+        width: 100%;
+        height: 10%;
+    }
+
+    .destinationGrid{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-left: 3%;
+        margin-right: 3%; 
+    }
+
+    .voyages a h2{
+        text-decoration: none;
+        font-size: 2rem;
+        display: flex;
+        object-fit: scale-down;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #prixMax{
+        width: 200px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
 }
 
-.voyages:hover {
+@media screen and (max-width: 50em) {
+    .voyages a p{
+        font-size: large;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
+        max-height: 20%;
+    }
+
+    .form_filtre p{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        font-size: 0.8em;
+        width: 100%;
+        height: 10%;
+    }
+
+    .destinationGrid{
+        background-color: rgb(204, 204, 204);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-left: 3%;
+        margin-right: 3%; 
+    }
+
+    .voyages a h2{
+        text-decoration: none;
+        font-size: 1rem;
+        display: flex;
+        object-fit: scale-down;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: black;
+    }
+
+    #prixMax{
+        width: 100px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+
+
+.voyages:hover a{
     color: #FF4E19;
 }
 
-#prixMax{
-    width: 100px;
-    margin-left: 5%;
-    margin-right: 5%;
-}
 
 #demo{
     display: flex;
@@ -129,7 +194,7 @@ aside{
     margin-right: 5%;
 }
 
-#prix{
+.form_filtre label{
     display: flex;
     align-items: center;
     justify-content: center;

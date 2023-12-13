@@ -1,11 +1,10 @@
 function getDestination(){
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const destination = urlParams.get('destination');
-    document.getElementById("dest").innerHTML="Votre reservation : "+destination;
-
-    return destination
-
+    const Produit = urlParams.get('destination');
+    document.getElementById("dest").innerHTML=Produit;
+    document.getElementById("Reserver").setAttribute("href", "mailto:test@bidule.fr?subject=Demande de réservation&body=Article : "+Produit+"%0ADate de reservation :%0ANom :%0APrenom :%0ANumero de téléphone :");
+    return Produit
 }
 
 function disableCheckbox(){
@@ -32,7 +31,7 @@ async function getInformations(){
     ville='';
     prix=0;
     img='';
-    assurance = false;
+    description = '';
     montage = false;
 
     for (v of contenu_json){ //in pour des entiers, donc 1,2,3. on pour des objets comme ici
@@ -41,13 +40,14 @@ async function getInformations(){
         console.log(ville);
         prix = v.prix;
         img = v.img;
-        assurance = v.assurance;
+        description = v.description;
         montage = v.montage;
         }
     }
     document.getElementById("image_dest").setAttribute("src", img);
+    document.getElementById("description_produit").innerHTML = description;
     document.getElementById("prix").innerHTML = "Prix par jour  : " + prix + "€";
-    disableCheckbox();
+    //disableCheckbox();
     reservation();
     
 }
