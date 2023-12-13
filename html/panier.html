@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Mon Panier</title>
+        <link rel="stylesheet" href="../css/panier.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src='../javascript/panier.js'></script>
+        <script src="../javascript/navbarAndFooter.js"></script>
+    </head>
+
+
+    
+    <body onload="getDestination()">
+        <header id="navbar" onload="headerAndFooter()">    
+        </header>
+        
+        <h2 id="pannier">Votre Panier</h2>
+        <div id="voyages">
+            <template id="mon_template">
+                <h3 id="dest" class="nom_destination">{{ville}}</h3>
+                <div id="Achat" class="Achat">
+        
+                        <img id ="image_dest" class="img_lieu" src="../img/Lyon.jpg">
+                        <div class="info_achat">
+                        <p id="nb_adult">Nombre de lots : {{nbAdult}}</p>
+                        <p id="nb_enfant">Nombre de produits suplementaires : {{nbEnfant}}</p>
+                        <p id="lunch">Assurance : {{lunch}}</p>
+                        <p id="lunch">Montage/Démontage : {{mont}}</p>
+                        <p id="date_arrive">Date de location : {{dateArrive}}</p>
+                        <p id="date_fin">Date de retour : {{dateFin}}</p>
+                        <p id="nb_jour">Nombre total de jours : {{nbJour}}</p>
+                        <p id="sous_total">Sous total du produit : {{soustotal}}€</p>
+                        <button id="suppresionVoyage">Supprimer le produit</button>
+                        <a class="plus_de_reservation" href="index.html">Voir plus de produits similaires</a>
+
+                </div>
+            </template>
+        </div>
+        <div id="footerpanier">
+            <h4 id="prixpanier"></h4>
+            <button onclick="supprimer()">Supprimer la totalité du panier</button>
+        </div>
+        <div id="fullform">
+            <h3 class="Titre_formulaire">Formulaire de reservation</h3>
+            <div id="footerform">
+                <form action="confirmation.html">
+                    <div class="Formulaire">
+                        <p>
+                            <label class="texte_formulaire" for="name">Votre nom :</label>
+                            <input class="input_formulaire" type="text" id="name" name="user_name" required>
+                        </p>
+                        <p>
+                            <label class="texte_formulaire" for="mail">Votre mail&nbsp;:</label>
+                            <input class="input_formulaire" type="email" id="mail" name="user_mail"required>
+                        </p> 
+                        <p>  
+                            <label class="texte_formulaire" for="adresse_postal">Votre adresse postal&nbsp;:</label>
+                            <input class="input_formulaire" type="text" id="adresse_postal" name="adresse_postal"required>
+                        </p> 
+                        <p> 
+                            <label class="texte_formulaire" for="numero">Numero de telephone portable&nbsp;:</label>
+                            <input class="input_formulaire" type="tel" id="num_portable" name="num_portable"required>
+                        </p>
+                        <p> 
+                            <label class="texte_formulaire" for="adresse_postal">Numero de telephone fixe&nbsp;:</label>
+                            <input class="input_formulaire" type="text" id="num_fix" name="num_fix"required>
+                        </p>
+                        <p> 
+                            <label class="texte_formulaire" for="msg">Message :</label>
+                            <textarea class="input_formulaire" id="msg" name="user_message"></textarea>
+                        </p>
+                    </div>
+                    
+                        <button class="bouton_confirmation"type="submit">Passer la commande</button>
+
+                </form>
+                <div id="desreserve">
+                    <h3>Conditions de reservations</h3>
+                    <p>Haec serium cum ardore mentibus similiaque redeundum est admodum similiaque redeundum pendentem memorabile cum 
+                        nihil agi agi videre ergo haec dimicationum mirum ardore ad curulium ad redeundum curulium mentibus redeundum 
+                        serium mentibus est ardore quodam agi similiaque plebem vel textum haec memorabile agi pendentem ardore textum 
+                        mentibus dimicationum infuso est infuso memorabile eventu ergo agi similiaque curulium infuso memorabile curulium 
+                        cum ergo textum videre permittunt pendentem permittunt similiaque mentibus curulium vel ergo dimicationum redeundum 
+                        dimicationum quodam plebem eventu est mentibus Romae plebem permittunt permittunt ardore admodum serium plebem serium 
+                        videre est mirum serium redeundum admodum curulium serium ardore textum eventu.</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <footer id="footer">
+        </footer>
+
+    </body>
+
+
+
+</html>
+

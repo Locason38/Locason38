@@ -1,0 +1,168 @@
+#pannier {
+    color: white;
+    margin: 0px;
+    background-color: rgb(83, 71, 71);
+    text-align: center;
+    font-size: 40px;
+  }
+
+body{
+    background-color: black;
+    margin-top: 130px;
+}
+
+#fullform{
+    background-color: rgb(204, 204, 204);
+    margin-top: 0px;
+}
+
+#voyages{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: rgb(204, 204, 204);
+}
+
+#footerpanier{
+    margin: 0px;
+    background-color: rgb(204, 204, 204);
+}
+
+#prixpanier{
+    text-align: center;
+    margin: 0px;
+    margin-left: 0px;
+    text-align: 20px;
+    background-color: rgb(83, 71, 71);
+    font-size: xx-large;
+    color: white;
+}
+
+#dest {
+    color: black;
+    background-color: rgb(156, 156, 156);
+    border: 1px solid black;
+    margin: 0px;
+  }
+
+a {
+    color:black;
+    margin-bottom: 30px;
+}
+.Achat {
+    color:black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Achat p{
+    font-size: 20px;
+}
+.info_achat {
+    color:black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.img_lieu {
+    height: 40%;
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.nom_destination {
+    height: 10%;
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+    align-items: flex-start;
+    color: black;
+}
+#suppresionVoyage{
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.prix_destination {
+    color: black;
+}
+.nb_personne {
+    color: black;
+}
+.nb_jour {
+    color: black;
+}
+.plus_de_reservation {
+    color: black;
+    font-size: 20px;
+}
+.Titre_formulaire {
+    text-align: center;
+    align-items: flex-start;
+    font-size: 30px;
+    color: white;
+    margin: 0px;
+    background-color: rgb(83, 71, 71);
+}
+.texte_formulaire {
+    height: 10%;
+    width: 30%;
+    display: flex;
+    color: black;
+    margin-left: 50px;
+}
+.input_formulaire {
+    height: 10%;
+    width: 50%;
+    display: flex;
+    margin-left: 50px;
+}
+
+.bouton_confirmation {
+    margin: 50px;
+    font-size: large;
+}
+
+#footerpanier button{
+    height: 10%;
+    width: 10%; 
+    font-size: large;
+    margin: 50px;
+}
+
+#footerform{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#footerform form{
+    height: 100%;
+    width: 40%;
+}
+
+#desreserve{
+    text-align: center;
+    margin-right: 20%;
+    height: 100%;
+    width: 33%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin-top: 50px;
+    background-color:rgb(167, 167, 167);
+}
+
+#desreserve p{
+    text-align: center;
+    width: 90%;
+    
+}

@@ -1,0 +1,137 @@
+h2 {
+    color: white;
+    background-color:rgb(83, 71, 71);
+    text-align: center;
+    font-size: xx-large;
+    margin: 0px;
+  }
+
+body{
+    background-color: black;
+    margin-top: 130px;
+}
+
+a {
+    color:black;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: black;
+    background-color: rgb(156, 156, 156);
+    border: 1px solid black;
+    margin: 0px;
+  }
+
+.Achat {
+    background-color:  rgb(204, 204, 204);
+    color:black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_achat {
+    color:black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.img_lieu {
+    height: 30%;
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nom_destination {
+    height: 10%;
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+    align-items: flex-start;
+    color: black;
+}
+
+.prix_destination {
+    color: black;
+}
+
+.nb_personne {
+    color: black;
+}
+
+.nb_jour {
+    color: black;
+}
+
+.plus_de_reservation {
+    color: black;
+}
+
+.texte_formulaire {
+    height: 10%;
+    width: 30%;
+    display: flex;
+    color: black;
+}
+
+#divprix{
+    margin: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+}
+
+#prixconfirmation{
+    margin-top: 0px;
+    background-color:rgb(83, 71, 71);
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+
+#infoperso{
+    margin-top: 0px;
+    background-color:rgb(83, 71, 71);
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 0px;
+}
+
+#divform{
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}
+
+#resultatform{
+    font-size: medium;
+    margin-left: 20px;
+    margin-top: 1%;
+    height: 100%;
+    width: 50%;
+}
+
+#footerdivform{
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+    margin-right: 10%;
+}
+
+#footerdivform p{
+    margin: 10px;
+}
