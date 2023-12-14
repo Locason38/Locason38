@@ -24,7 +24,6 @@ async function display(){
     
         clone.firstElementChild.innerHTML = clone.firstElementChild.innerHTML
         .replace(/{{destination}}/g, v.location)
-        .replace(/{{lien}}/g, v.lien)
         .replace(/{{prix}}/g, v.prix)
 
         clone.getElementById("imageDest").setAttribute('src', v.img);
