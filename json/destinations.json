@@ -5,7 +5,7 @@
         { "id":2,"location":"caisson de basse", "prix":200, "description":"test de description", "img":"../img/sub.png", "lien":"../html/reservation.html?destination=caisson de basse"},
         { "id":3,"location":"Enceinte et Table de mixage", "prix":500, "description":"test de description", "img":"../img/enseintes.jpg", "lien":"../html/reservation.html?destination=Enceinte et Table de mixage"},
         { "id":4,"location":"Ecrans geant", "prix":150, "description":"test de description", "img":"../img/ecran.jpg", "lien":"../html/reservation.html?destination=Ecrans geant"},
-        { "id":5,"location":"Ecrans geant et Enceinte", "prix":20, "description":"test de description", "img":"../img/ecran.jpg", "lien":"../html/reservation.html?destination=Ecrans geant et Enceinte"},
+        { "id":5,"location":"Ecrans geant et Enceinte", "prix":200, "description":"test de description", "img":"../img/ecran.jpg", "lien":"../html/reservation.html?destination=Ecrans geant et Enceinte"},
         { "id":6,"location":"Lumieres de soirées", "prix":150, "description":"test de description", "img":"../img/lumiere.png", "lien":"../html/reservation.html?destination=Lumieres de soirées"},
         { "id":7,"location":"Machine à mousse", "prix":200, "description":"test de description", "img":"../img/MachineMousse.jpg", "lien":"../html/reservation.html?destination=Machine à mousse"},
         { "id":8,"location":"Machine à fumée", "prix":150, "description":"test de description", "img":"../img/MachineFumée.jpg", "lien":"../html/reservation.html?destination=Machine à fumée"},
