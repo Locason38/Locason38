@@ -1,8 +1,7 @@
     [
 
         { "id":1,"location":"Enceinte", "prix":100, "description":"je suis une enceinte", "img":"../img/sono.png"},
-        { "id":2,"location":"Canon A Air Chaud", "prix":30, "description":"Chauffage à gaz intérieur extérieur, idéal pour chauffer <br> une tonnelle ou un barnum et différents autres utilisations.", "img":"..img/IMG_BAA59F663974-1.jpeg
-        { "id":2,"location":"caisson de basse", "prix":200, "description":"test de description", "img":"../img/sub.png"},
+        { "id":2,"location":"Canon A Air Chaud", "prix":30, "description":"Chauffage à gaz intérieur extérieur, idéal pour chauffer <br> une tonnelle ou un barnum et différents autres utilisations.", "img":"..img/IMG_BAA59F663974-1.jpeg}        { "id":2,"location":"caisson de basse", "prix":200, "description":"test de description", "img":"../img/sub.png"},
         { "id":3,"location":"Enceinte et Table de mixage", "prix":500, "description":"test de description", "img":"../img/enseintes.jpg"},
         { "id":4,"location":"Pack Ecrans Geant", "prix":150, "description":"Écrans géant plus video projecteur plus enceinte", "img":"../img/ecran.jpg"},
         { "id":5,"location":"Ecrans", "prix":200, "description":"test de description", "img":"../img/ecran.jpg"},
